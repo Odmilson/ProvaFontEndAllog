@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Services</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a class="sidebar-header__notification" href="">
+          <i class="fa-regular fa-bell"></i>
+        </a>
+        <a class="sidebar-header__config" href="">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="sidebar-user__image-wrapper">
+          <img class="sidebar-user__image" src="img/Imageprofile.png" alt="" />
+        </div>
+        <div class="sidebar-user__name-wrapper">
+          <span class="sidebar-user__name">Lance Newmann</span>
+        </div>
+      </div>
+
+      <div class="navbar-wrapper">
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <button class="navbar__button">
+                <div class="navbar__button-text">
+                  <i class="fa-solid fa-calendar"></i> <span>Schedule</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <ul class="navbar__sub-list">
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">List</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Create</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Report</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navbar__list-item">
+              <button class="navbar__button" id="orders">
+                <div class="navbar__button-text">
+                  <i class="fa-solid fa-bell-concierge"></i> <span>Orders</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <ul class="navbar__sub-list">
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">List</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Create</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Report</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navbar__list-item">
+              <button class="navbar__button">
+                <div class="navbar__button-text">
+                  <i class="fa-solid fa-user"></i> <span>Customers</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <ul class="navbar__sub-list">
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">List</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Create</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Report</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navbar__list-item">
+              <button class="navbar__button">
+                <div class="navbar__button-text">
+                  <i class="fa-solid fa-briefcase"></i> <span>Employees</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <ul class="navbar__sub-list">
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">List</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Create</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Report</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navbar__list-item">
+              <button class="navbar__button">
+                <div class="navbar__button-text">
+                  <i class="fa-solid fa-scissors"></i> <span>Services</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <ul class="navbar__sub-list navbar__sub-list--active">
+                <li class="navbar__sub-list-item navbar__sub-list-item--active">
+                  <a class="navbar__sub-list-link" href="">List</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Create</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Report</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navbar__list-item">
+              <button class="navbar__button">
+                <div class="navbar__button-text">
+                  <i class="fa-solid fa-paperclip"></i> <span>Products</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <ul class="navbar__sub-list">
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">List</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Create</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Report</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navbar__list-item">
+              <button class="navbar__button">
+                <div class="navbar__button-text">
+                  <i class="fa-solid fa-parachute-box"></i>
+                  <span>Suppliers</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <ul class="navbar__sub-list">
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">List</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Create</a>
+                </li>
+
+                <li class="navbar__sub-list-item">
+                  <a class="navbar__sub-list-link" href="">Report</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+      <div class="sidebar-space"></div>
+      <div class="main-content-wrapper">
+        <div class="main-content">
+          <div class="main-content__title">
+            <h1 class="title">SERVICES</h1>
+          </div>
+          <div class="searchbar">
+            <input
+              class="searchbar__input"
+              type="text"
+              placeholder="Search Service"
+            />
+            <button class="searchbar__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="suppliers-table-wrapper">
+            <table class="suppliers-table">
+              <thead class="suppliers-table__header">
+                <th class="suppliers-table__header-col">NAME  <i class="fa-solid fa-angle-down suppliers-table__header-col-arrow"></i></th>
+                <th class="suppliers-table__header-col">DESCRIPTION</th>
+                <th class="suppliers-table__header-col">CATEGORY</th>
+                <th class="suppliers-table__header-col">PRICE  <i class="fa-solid fa-angle-down suppliers-table__header-col-arrow"></i></th>
+              </thead>
+              <tbody>
+                <tr class="suppliers-table__row">
+                  <td class="suppliers-table__data">Van Dyke</td>
+                  <td class="suppliers-table__data">
+                    Bigode levemente curvado com cavanhaque pontudo
+                  </td>
+                  <td class="suppliers-table__data">Cabelo</td>
+                  <td class="suppliers-table__data">10.20</td>
+                </tr>
+                <tr class="suppliers-table__row">
+                  <td class="suppliers-table__data">Van Dyke</td>
+                  <td class="suppliers-table__data">
+                    Bigode levemente curvado com cavanhaque pontudo
+                  </td>
+                  <td class="suppliers-table__data">Cabelo</td>
+                  <td class="suppliers-table__data">10.20</td>
+                </tr>
+                <tr class="suppliers-table__row">
+                  <td class="suppliers-table__data">Van Dyke</td>
+                  <td class="suppliers-table__data">
+                    Bigode levemente curvado com cavanhaque pontudo
+                  </td>
+                  <td class="suppliers-table__data">Cabelo</td>
+                  <td class="suppliers-table__data">10.20</td>
+                </tr>
+                <tr class="suppliers-table__row">
+                  <td class="suppliers-table__data">Van Dyke</td>
+                  <td class="suppliers-table__data">
+                    Bigode levemente curvado com cavanhaque pontudo
+                  </td>
+                  <td class="suppliers-table__data">Cabelo</td>
+                  <td class="suppliers-table__data">10.20</td>
+                </tr>
+                <tr class="suppliers-table__row">
+                  <td class="suppliers-table__data">Van Dyke</td>
+                  <td class="suppliers-table__data">
+                    Bigode levemente curvado com cavanhaque pontudo
+                  </td>
+                  <td class="suppliers-table__data">Cabelo</td>
+                  <td class="suppliers-table__data">10.20</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination-wrapper">
+              <div class="pagination">
+                <button class="pagination-button">
+                  <i class="fa-solid fa-forward fa-rotate-180"></i></button
+                ><button class="pagination-button">
+                  <i class="fa-solid fa-caret-right fa-rotate-180"></i>
+                </button>
+                <button class="pagination-button">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button">4</button>
+                <button class="pagination-button">5</button>
+                <button class="pagination-button">
+                  <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <button class="pagination-button">
+                  <i class="fa-solid fa-forward"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-wrapper">
+          <div class="modal">
+            <div class="modal__title-wrapper">
+              <span class="modal__title">EDIT SERVICE</span>
+            </div>
+            <div class="modal__tab">
+              <span class="modal__tab-text">Information</span>
+            </div>
+            <div class="modal__form-wrapper">
+              <form class="modal__form" action="">
+                <div class="modal__form-row">
+                  <div class="modal__form-input-wrapper">
+                    <span class="modal__form-input-text">Name</span>
+                    <input class="modal__input" type="text" name="name" />
+                  </div>
+                  <div class="modal__form-input-wrapper">
+                    <span class="modal__form-input-text">Price</span>
+                    <input class="modal__input" type="text" name="price" />
+                  </div>
+                </div>
+                <div class="modal__form-row">
+                    <div class="modal__form-input-wrapper">
+                        <span class="modal__form-input-text">Description</span>
+                        <textarea
+                    class="modal__textarea"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="9"
+                  ></textarea>
+                      </div>
+                  
+                  <div class="modal__form-col">
+                    <div class="modal__form-input-wrapper">
+                        <span class="modal__form-input-text">Category</span>
+                        <input class="modal__input" type="text" name="price" />
+                      </div>
+                    <div class="modal__form-input-wrapper">
+                        <span class="modal__form-input-text">Duration</span>
+                        <input class="modal__input" type="text" name="price" />
+                      </div>
+                  </div>
+                </div>
+                <div class="modal__form-footer-wrapper">
+                  <div class="modal__form-inactive-input-wrapper">
+                    <input class="modal__form-inactive-input" type="checkbox" />
+                    <span class="modal_form-inactive-input-text">INACTIVE</span>
+                  </div>
+                  <div class="modal__form-buttons-wrapper">
+                    <button class="modal__form-save-button">SAVE</button>
+                    <button
+                      class="modal__form-cancel-button"
+                      onclick="closeModal()"
+                    >
+                      CANCEL
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>

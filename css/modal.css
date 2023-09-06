@@ -1,0 +1,145 @@
+.modal-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 3vw;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    row-gap: 3vw;
+    /* display: none; */
+}
+
+.modal__title-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.modal__title{
+    font-size: clamp(1vmin, 3vw, 3.6vmax);
+    font-weight: 700;
+    color: #0275D8;
+}
+
+.modal__tab{
+    display: flex;
+    width: 100%;
+    border-bottom: solid 0.2vw;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__tab-text{
+    font-size: clamp(0.5vmin, 1.2vw, 2vmax);
+    color: #0275D8;
+}
+
+.modal__form-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal__form{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 3fr;
+    row-gap: 2vw;
+}
+
+.modal__form-row{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 2vw;
+}
+
+.modal__form-col{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+
+.modal__input{
+    background-color: #fff;
+    border: solid .2vw #f6f6f6;
+    height: 100%;
+    font-size: clamp(1vmin, vw ,1vmax);
+    border-radius: .5vw;
+}
+
+.modal__textarea{
+    background-color: #fff;
+    border: solid .2vw #f6f6f6;
+    border-radius: .5vw;
+    resize: none;
+}
+
+.modal__form-footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2vw;
+}
+
+.modal__form-inactive-input-wrapper{
+
+}
+
+.modal__form-inactive-input{
+
+}
+
+.modal_form-inactive-input-text{
+
+}
+
+.modal__form-buttons-wrapper{
+    display: flex;
+    column-gap: 1vw;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.modal__form-save-button{
+    width: 45%;
+    padding: 1vw;
+    border-radius: .5vw;
+    background-color: rgba(2, 117, 216, 1);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal__form-cancel-button{
+    width: 45%;
+    padding: 1vw;
+    border-radius: .5vw;
+    background-color: rgba(90, 90, 90, 0.5);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal__form-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    row-gap: .2vw;
+}
+
+.modal__form-input-text{
+    display: flex;
+    /* font-size: clamp(); */
+}
